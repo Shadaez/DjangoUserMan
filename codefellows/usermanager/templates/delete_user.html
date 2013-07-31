@@ -1,0 +1,9 @@
+<h1>Delete User</h1>
+
+<p>Confirm delete?</p>
+
+<form action="{{ action }}" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Confirm." />
+  <a href="{% url "user-list" %}">Cancel.</a>
+</form>
